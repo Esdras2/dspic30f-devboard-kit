@@ -537,7 +537,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerbbers/",
+      "plot": "gerbbers_reva/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

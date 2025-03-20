@@ -4622,6 +4622,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 109.22) (xy 171.45 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "147a94e2-1e91-476e-9c8b-23db94232eb1")
+	)
+	(wire
+		(pts
 			(xy 113.03 147.32) (xy 107.95 147.32)
 		)
 		(stroke
@@ -5662,6 +5672,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 106.68) (xy 168.91 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49b1ee6-6ac9-46aa-99a6-dd2365e70eef")
+	)
+	(wire
+		(pts
 			(xy 234.95 134.62) (xy 241.3 134.62)
 		)
 		(stroke
@@ -6428,6 +6448,17 @@
 		)
 		(uuid "ac86d714-c556-48a7-8c30-0d5d3e93cf52")
 	)
+	(label "VSS1"
+		(at 168.91 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0b5cca1-65be-45e2-843d-2903b21984cf")
+	)
 	(label "PGD"
 		(at 208.28 55.88 0)
 		(fields_autoplaced yes)
@@ -6559,6 +6590,17 @@
 			(justify right bottom)
 		)
 		(uuid "cf44ca23-c395-48b0-afb1-cfdbeb56a258")
+	)
+	(label "VSS2"
+		(at 171.45 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d581f43f-77ba-48ee-9c91-6c528d63e1da")
 	)
 	(label "RE2"
 		(at 245.11 63.5 0)
@@ -8746,7 +8788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aeb9e0d6-2b06-4eea-ac8a-9cb1770e5698")
-		(property "Reference" "ICSP"
+		(property "Reference" "ICSP1"
 			(at 86.36 146.0499 0)
 			(effects
 				(font
@@ -8812,7 +8854,7 @@
 		(instances
 			(project ""
 				(path "/c57c8b8a-cb5c-45d3-8c1c-ff7cf62f6723"
-					(reference "ICSP")
+					(reference "ICSP1")
 					(unit 1)
 				)
 			)
