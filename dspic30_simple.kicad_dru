@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "Nombre de la regla"
+    (condition "A.Type == 'pad' && (B.Type == 'text' || B.Type == 'graphic')")
+    (constraint clearance (min 0.2mm))
+)
