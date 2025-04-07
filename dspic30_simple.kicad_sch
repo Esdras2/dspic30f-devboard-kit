@@ -4420,6 +4420,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 109.22) (xy 171.45 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "147a94e2-1e91-476e-9c8b-23db94232eb1")
+	)
+	(wire
+		(pts
 			(xy 113.03 147.32) (xy 107.95 147.32)
 		)
 		(stroke
@@ -5450,6 +5460,29 @@
 	)
 	(wire
 		(pts
+<<<<<<< HEAD
+=======
+			(xy 168.91 106.68) (xy 168.91 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49b1ee6-6ac9-46aa-99a6-dd2365e70eef")
+	)
+	(wire
+		(pts
+			(xy 234.95 134.62) (xy 241.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeff313e-a7c6-472d-aa9d-c8359dfa44b2")
+	)
+	(wire
+		(pts
+>>>>>>> master
 			(xy 234.95 109.22) (xy 238.76 109.22)
 		)
 		(stroke
@@ -6238,6 +6271,31 @@
 		)
 		(uuid "aa198094-36bf-4860-830a-7e32083843c6")
 	)
+<<<<<<< HEAD
+=======
+	(label "RC13"
+		(at 237.49 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac86d714-c556-48a7-8c30-0d5d3e93cf52")
+	)
+	(label "VSS1"
+		(at 168.91 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0b5cca1-65be-45e2-843d-2903b21984cf")
+	)
+>>>>>>> master
 	(label "PGD"
 		(at 208.28 55.88 0)
 		(fields_autoplaced yes)
@@ -6391,6 +6449,17 @@
 			(justify right bottom)
 		)
 		(uuid "cf44ca23-c395-48b0-afb1-cfdbeb56a258")
+	)
+	(label "VSS2"
+		(at 171.45 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d581f43f-77ba-48ee-9c91-6c528d63e1da")
 	)
 	(label "RE2"
 		(at 245.11 63.5 0)
@@ -8398,6 +8467,79 @@
 			(project ""
 				(path "/c57c8b8a-cb5c-45d3-8c1c-ff7cf62f6723"
 					(reference "ICSP1")
+<<<<<<< HEAD
+=======
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2eb76ea-bdab-424a-8321-28b8d699ebb7")
+		(property "Reference" "C3"
+			(at 123.19 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "18pF"
+			(at 123.19 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm"
+			(at 120.3452 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 119.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cceeaa29-b1d7-45ad-9772-ee3dd4924bce")
+		)
+		(pin "1"
+			(uuid "ab51ed59-c1f9-4821-b304-c5581d75cdbc")
+		)
+		(instances
+			(project ""
+				(path "/c57c8b8a-cb5c-45d3-8c1c-ff7cf62f6723"
+					(reference "C3")
+>>>>>>> master
 					(unit 1)
 				)
 			)
