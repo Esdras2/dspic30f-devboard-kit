@@ -527,6 +527,7 @@
     "net_colors": null,
     "netclass_assignments": {
       "/5VLDO": "5V_LDO",
+      "/5VLDO_reg": "5V_LDO",
       "Net-(U1-VDD-Pad11)": "5V_LDO",
       "Net-(U2-OUT)": "5V_LDO"
     },
@@ -537,7 +538,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerbbers_revC/",
+      "plot": "gerbbers_reva/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
