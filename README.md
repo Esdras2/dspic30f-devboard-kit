@@ -28,7 +28,7 @@
 |------------------|-------------------------------------------------------------------------------------------------------------|
 | **Power**        | 12 V DC barrel jack → **on-board 5 V LDO** (LM7805)                                                         |
 | **CPU**          | **dsPIC30F4011**, 30 MIPS, **socket pads widened** for easy solder/rework                                    |
-| **Clock**        | **7.3728 MHz** crystal + 2 × 22 pF load caps → precise UART/DSP timing                                       |
+| **Clock**        |  precise UART/DSP timing                                                                                     |
 | **Reset**        | Single **RC + Schmitt trigger** → faster boot, ~50 % parts count cut                                         |
 | **ICSP**         | Standard 6-pin header (Pickit 3/4 compatible)                                                               |
 | **Service**      | **Bridge jumpers** isolate power, ICSP, and analog rails → safe bring-up / troubleshooting                   |
