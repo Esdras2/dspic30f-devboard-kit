@@ -1,4 +1,42 @@
+# Carpetas de salidas y respaldos
 gerbbers/
+gerbbers_reva/
+gerbbers_revb/
+gerbbers_revC/
+gebbers_rev_d/
+GER/
+dspic30_simple-backups/
+output/
+backups/
+
+# Materiales y documentación generada
 materiales/
+docs/
+
+# Archivos de fabricación y empaquetados
 *.zip
 *.gbr
+*.gbrjob
+*.drl
+*.csv
+*.xml
+*.bom
+
+# Archivos temporales y de caché de KiCad
+*.lck
+fp-info-cache
+*.bak
+*.tmp
+*.swp
+
+# Archivos de usuario y configuración local
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Archivos ocultos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Otros archivos temporales
+~*
