@@ -1,4 +1,3 @@
-````markdown
 # dsPIC30F4011 DIP-40 Development Board  
 *A through-hole, single-supply platform for mixed-signal DSP labs*
 
@@ -6,10 +5,8 @@
 [![Latest Revision D](https://img.shields.io/badge/hardware-Rev%20D-orange.svg)](#hardware-revisions)  
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> A compact, **breadboard-friendly** board built around Microchip’s  
-> **dsPIC30F4011 (DIP-40)**. Designed for university courses and hobbyists who  
-> need a low-cost, fully THT solution for real-time DSP, motor-control, or  
-> instrumentation projects.
+> Compact, **breadboard-friendly** board built around Microchip’s  
+> **dsPIC30F4011 (DIP-40)**. Ideal for university courses and hobbyists who need a low-cost, fully-THT solution for real-time DSP, motor-control, or instrumentation projects.
 
 ---
 
@@ -21,36 +18,36 @@
 5. [Bill of Materials](#bill-of-materials)  
 6. [Contributing](#contributing)  
 7. [License](#license)  
-8. [Resumen rápido en español](#resumen-rápido-español)
+8. [Resumen rápido en español](#resumen-rápido-en-español)
 
 ---
 
 ## Key Features (Rev D)
 
-| Block            | Details                                                                                             |
-|------------------|-----------------------------------------------------------------------------------------------------|
-| **Power**        | 12 V DC barrel jack → **on-board 5 V LDO** (LM7805)                                                 |
-| **CPU**          | **dsPIC30F4011**, 30 MIPS, **socket pads widened** for easy solder/rework                            |
-| **Clock**        | **7 .3728 MHz** crystal + 2 × 22 pF load caps → precise UART/DSP timing                              |
-| **Reset**        | Single **RC + Schmitt trigger** → faster boot, 50 % parts count cut                                  |
-| **ICSP**         | Standard 6-pin header (Pickit 3/4 compatible)                                                       |
-| **Service**      | **Bridge jumpers** isolate power, ICSP, and analog rails → safe bring-up / troubleshooting          |
-| **Silkscreen**   | Pin name on **every** MCU pad + labelled test-points                                                |
-| **Form Factor**  | 52 mm × 45 mm PCB (18 % smaller than Rev B) — fits 70 mm breadboards                                |
+| Block            | Details                                                                                                     |
+|------------------|-------------------------------------------------------------------------------------------------------------|
+| **Power**        | 12 V DC barrel jack → **on-board 5 V LDO** (LM7805)                                                         |
+| **CPU**          | **dsPIC30F4011**, 30 MIPS, **socket pads widened** for easy solder/rework                                    |
+| **Clock**        | **7.3728 MHz** crystal + 2 × 22 pF load caps → precise UART/DSP timing                                       |
+| **Reset**        | Single **RC + Schmitt trigger** → faster boot, ~50 % parts count cut                                         |
+| **ICSP**         | Standard 6-pin header (Pickit 3/4 compatible)                                                               |
+| **Service**      | **Bridge jumpers** isolate power, ICSP, and analog rails → safe bring-up / troubleshooting                   |
+| **Silkscreen**   | Pin name on **every** MCU pad + labelled test points                                                        |
+| **Form Factor**  | 52 mm × 45 mm PCB (≈18 % smaller than Rev B) — fits 70 mm breadboards                                        |
 
-*Full schematic, 3-D renders, PDFs, and Gerbers live in* `/hardware/Rev_D/`.
+*Full schematic, 3-D renders, PDFs, and Gerbers live in `/hardware/Rev_D/`.*
 
 ---
 
 ## Hardware Revisions
 
-| Rev  | Focus                       | Major Changes                                                                                                  |
-|------|-----------------------------|----------------------------------------------------------------------------------------------------------------|
-| **B**| First production            | Base THT design, 12 V→5 V regulation, full silkscreen                                                          |
-| **C**| Bug-fix & size reduction    | Fixed reversed barrel polarity, wired V<sub>REF±</sub>, **shrunk PCB** (63 × 52 ⇒ 52 × 45 mm)                   |
-| **D**| Serviceability & accuracy   | Simplified reset, **larger socket pads**, bridge jumpers, **crystal oscillator added**                         |
+| Rev | Focus                      | Major Changes                                                                                                          |
+|-----|----------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **B** | First production           | Base THT design, 12 V→5 V regulation, full silkscreen                                                                  |
+| **C** | Bug-fix & size reduction  | Fixed reversed barrel polarity, wired V<sub>REF±</sub>; **PCB shrunk** 63 × 52 mm → 52 × 45 mm                          |
+| **D** | Serviceability & accuracy | Simplified reset, **larger socket pads**, bridge jumpers, **crystal oscillator added**                                 |
 
-Previous spins remain for reference; Rev D is the recommended build.
+*Older spins remain for reference; **Rev D** is the recommended build.*
 
 ---
 
@@ -61,10 +58,10 @@ Previous spins remain for reference; Rev D is the recommended build.
 │   ├── Rev_B/
 │   ├── Rev_C/
 │   └── Rev_D/
-├── firmware/         # MPLAB X XC16 demo code (blinky, UART loopback, FIR demo)
+├── firmware/         # MPLAB X XC16 demo code (blinky, UART loop-back, FIR demo)
 ├── docs/             # Schematics (PDF), BOMs (CSV/XLSX), 3-D STEP
 └── README.md
-````
+```
 
 ---
 
@@ -129,6 +126,3 @@ See the [LICENSE](LICENSE) file for details.
 * Programación vía ICSP con Pickit 3/4.
 
 ¡Felices prototipos! 🎉
-
-```
-```
