@@ -11,7 +11,7 @@ backups/
 
 # Materiales y documentación generada
 materiales/
-docs/
+#docs/
 
 # Archivos de fabricación y empaquetados
 *.zip
