@@ -1,12 +1,13 @@
-# dsPIC30F4011 DIP-40 Development Board  
+# dsPIC30F4011 / dsPIC33EP Dev Boards  
 *A through-hole, single-supply platform for mixed-signal DSP labs*
 
 [![KiCad 8.x](https://img.shields.io/badge/KiCad-8.x-blue.svg)](https://kicad.org)  
 [![Latest Revision D](https://img.shields.io/badge/hardware-Rev%20D-orange.svg)](#hardware-revisions)  
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> Compact, **breadboard-friendly** board built around Microchip’s  
-> **dsPIC30F4011 (DIP-40)**. Ideal for university courses and hobbyists who need a low-cost, fully-THT solution for real-time DSP, motor-control, or instrumentation projects.
+> Compact, **breadboard-friendly** boards built around Microchip’s  
+> **dsPIC30F4011 (DIP-40)** and **dsPIC33EP128MC206 (TQFP-64)**.  
+> Ideal for university courses and hobbyists who need a low-cost, fully-THT solution for real-time DSP, motor-control, or instrumentation projects.
 
 ---
 
@@ -16,9 +17,10 @@
 3. [Folder Structure](#folder-structure)  
 4. [Quick Start](#quick-start)  
 5. [Bill of Materials](#bill-of-materials)  
-6. [Contributing](#contributing)  
-7. [License](#license)  
-8. [Resumen rápido en español](#resumen-rápido-en-español)
+6. [Pinout Reference](#pinout-reference)  
+7. [Contributing](#contributing)  
+8. [License](#license)  
+9. [Resumen rápido en español](#resumen-rápido-en-español)
 
 ---
 
@@ -27,13 +29,13 @@
 | Block            | Details                                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------------------|
 | **Power**        | 12 V DC barrel jack → **on-board 5 V LDO** (LM7805)                                                         |
-| **CPU**          | **dsPIC30F4011**, 30 MIPS, **socket pads widened** for easy solder/rework                                    |
-| **Clock**        |  precise UART/DSP timing                                                                                     |
-| **Reset**        | Single **RC + Schmitt trigger** → faster boot, ~50 % parts count cut                                         |
+| **CPU**          | **dsPIC30F4011** (DIP-40) or **dsPIC33EP128MC206** (TQFP-64, see docs)                                      |
+| **Clock**        | Precise UART/DSP timing                                                                                     |
+| **Reset**        | Single **RC + Schmitt trigger** → faster boot, ~50 % parts count cut                                        |
 | **ICSP**         | Standard 6-pin header (Pickit 3/4 compatible)                                                               |
 | **Service**      | **Bridge jumpers** isolate power, ICSP, and analog rails → safe bring-up / troubleshooting                   |
 | **Silkscreen**   | Pin name on **every** MCU pad + labelled test points                                                        |
-| **Form Factor**  | 52 mm × 45 mm PCB (≈18 % smaller than Rev B) — fits 70 mm breadboards                                        |
+| **Form Factor**  | 52 mm × 45 mm PCB (≈18 % smaller than Rev B) — fits 70 mm breadboards                                       |
 
 *Full schematic, 3-D renders, PDFs, and Gerbers live in `/hardware/Rev_D/`.*
 
@@ -59,7 +61,8 @@
 │   ├── Rev_C/
 │   └── Rev_D/
 ├── firmware/         # MPLAB X XC16 demo code (blinky, UART loop-back, FIR demo)
-├── docs/             # Schematics (PDF), BOMs (CSV/XLSX), 3-D STEP
+├── docs/             # Schematics (PDF), BOMs (CSV/XLSX), 3-D STEP, pinouts
+│   └── dspic33.cvs   # Pinout for dsPIC33EP128MC206
 └── README.md
 ```
 
@@ -81,7 +84,7 @@ KiCad → **File ▸ Plot** → select *Gerber* + *Drill*; zip and send to JLCPC
 
 ### 3 · Assemble
 
-All parts are **through-hole**; ideal for hand-soldering or wave machines.
+All parts are **through-hole**; ideal for hand-soldering or wave machines.  
 *Tip :* keep bridge jumpers **open** on first power-up.
 
 ### 4 · Flash the Demo
@@ -104,6 +107,22 @@ TBD
 
 ---
 
+## Pinout Reference
+
+- **dsPIC30F4011**: See schematic and silkscreen.
+- **dsPIC33EP128MC206**:  
+  Pinout available in [`docs/dspic33.cvs`](docs/dspic33.cvs):
+
+  ```
+  1,(RA7)
+  2,(RB14)
+  3,(RB15)
+  ...
+  64,(RA10)
+  ```
+
+---
+
 ## Contributing
 TBD
 
@@ -113,16 +132,16 @@ Bug reports and board mods are welcome!
 
 ## License
 
-All hardware, firmware, and documents are released under the **MIT License**.
+All hardware, firmware, and documents are released under the **MIT License**.  
 See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Resumen rápido (español)
 
-* Placa educativa **THT** con **dsPIC30F4011**.
+* Placa educativa **THT** con **dsPIC30F4011** y soporte para **dsPIC33EP128MC206**.
 * Rev D añade cristal, jumpers de aislamiento y pads más amplios.
-* Archivos KiCad 8 en `/hardware/Rev_D/`; BOM completa en `docs/`.
+* Archivos KiCad 8 en `/hardware/Rev_D/`; BOM completa y pinout en `docs/`.
 * Programación vía ICSP con Pickit 3/4.
 
 ¡Felices prototipos! 🎉
