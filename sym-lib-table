@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "dsPIC33")(type "KiCad")(uri "${KIPRJMOD}/dsPIC33.kicad_sym")(options "")(descr ""))
+  (lib (name "dsPIC33EP128MC206_I_PT_v2")(type "KiCad")(uri "Z:/Downloads/dsPIC33EP128MC206_I_PT_v2.kicad_sym")(options "")(descr ""))
+)
